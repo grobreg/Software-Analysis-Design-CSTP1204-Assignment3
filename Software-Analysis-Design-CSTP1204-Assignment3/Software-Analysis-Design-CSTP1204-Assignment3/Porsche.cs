@@ -1,13 +1,27 @@
 ﻿using System;
-namespace classes.Cars
+using System.Collections.Generic;
+using System.Text;
+
+namespace Software_Analysis_Design_CSTP1204_Assignment3
 {
     public class Porsche : Car
     {
-        public int horsePower;
+        public string LuxuryFeature;
+
+
+        public Porsche() : base()
+        {
+            this.Branding = "Porsche";
+        }
     }
 
-    public class Cayenne : Porsche
+    public class Taycan: Porsche
     {
-        public string engine;
+        public Taycan() : base()
+        {
+            this.Type = "Hybrid";
+            this.Model = "ElectricTurbo4S";
+            this.LuxuryFeature = "Premium Leather Electric Seats";
+        }
     }
 }
